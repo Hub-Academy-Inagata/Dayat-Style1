@@ -1,0 +1,80 @@
+.post-artikel {
+  margin-top: 100px;
+  .col-post {
+    margin-bottom: 30px;
+    &-dates {
+      display: flex;
+      justify-content: flex-start;
+      p {
+        background: linear-gradient(
+          99.2deg,
+          #3a75d1 1.94%,
+          #54bbec 100%,
+          #54bbec 100%
+        );
+        text-align: center;
+        padding: 5px;
+        width: 170px;
+        color: #fff;
+      }
+    }
+    &-button {
+      font-weight: 600;
+      color: #f3a84e;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  h4 {
+    font-weight: 700;
+    color: #1c2661;
+  }
+  p {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .card {
+    margin-top: 20px;
+    width: auto;
+    border-radius: 20px;
+    border: none;
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      border: 1px solid #1c2661;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1c2661;
+    }
+    .card-text {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .post-artikel {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .post-artikel {
+    .col {
+      display: grid;
+      justify-items: center;
+      .card {
+        width: 80%;
+      }
+    }
+  }
+}

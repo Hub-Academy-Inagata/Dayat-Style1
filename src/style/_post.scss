@@ -1,0 +1,35 @@
+.hero-tentang {
+  .post-img {
+    img {
+      margin-top: 80px;
+      width: 100%;
+    }
+  }
+}
+.post-wrapper {
+  margin-top: 70px;
+  .dates {
+    display: flex;
+    justify-content: flex-start;
+    p {
+      background: linear-gradient(
+        99.2deg,
+        #3a75d1 1.94%,
+        #54bbec 100%,
+        #54bbec 100%
+      );
+      text-align: center;
+      padding: 5px;
+      width: 170px;
+      color: #fff;
+    }
+  }
+  h1 {
+    font-weight: 700;
+    color: #1c2661;
+    margin-bottom: 30px;
+  }
+  p {
+    text-align: justify;
+  }
+}

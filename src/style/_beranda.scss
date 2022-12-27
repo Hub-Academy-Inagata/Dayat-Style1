@@ -1,0 +1,257 @@
+// HERO
+.hero {
+  background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  //   background-size: 44.9vw;
+  padding-bottom: 170px;
+
+  .row {
+    min-height: calc(100vh - 116px);
+  }
+  .hero-row {
+    background-image: url("../img/hero.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: center;
+    background-size: 44.9vw;
+  }
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+}
+// HERO
+
+// KEUNGGULAN
+.keunggulan-beranda {
+  margin-top: 100px;
+  justify-content: center;
+  width: 100%;
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #1c2661;
+  }
+
+  .keunggulan-col {
+    text-align: center;
+
+    .icon {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 20px;
+      img {
+        width: 60px;
+      }
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1c2661;
+    }
+  }
+}
+// KEUNGGULAN
+
+//TENTANG
+.tentang-beranda {
+  margin-top: 100px;
+  .row {
+    padding: 30px;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: linear-gradient(
+      90.65deg,
+      rgba(230, 238, 255, 0.85) 0.53%,
+      rgba(230, 238, 255, 0) 139.2%
+    );
+    h1 {
+      font-weight: 700;
+      color: #1c2661;
+      margin-bottom: 35px;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+//TENTANG
+
+//Galeri
+.galeri-beranda {
+  margin-top: 100px;
+  padding: 50px 0;
+  color: #fff;
+  background: linear-gradient(
+    99.2deg,
+    #3a75d1 1.94%,
+    #54bbec 100%,
+    #54bbec 100%
+  );
+  h1 {
+    font-weight: 700;
+  }
+
+  .dokumentasi {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .all-link {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .row {
+    justify-content: space-between;
+    .col {
+      width: auto;
+      padding: 10px 0;
+      img {
+        width: 200px;
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+//Galeri
+
+//artikel
+.artikel-beranda {
+  margin-top: 100px;
+  color: #1c2661;
+  h1 {
+    font-weight: 700;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .card {
+    margin-top: 20px;
+    width: auto;
+    border-radius: 20px;
+    border: none;
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      border: 1px solid #1c2661;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card-text {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+}
+//artikel
+
+@media (max-width: 992px) {
+  .tentang-beranda {
+    .tentang-col {
+      align-self: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .artikel-beranda {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 103px;
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  .keunggulan-beranda {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .tentang-beranda {
+    text-align: center;
+    h1 {
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding-top: 103px;
+    img {
+      width: 90vw;
+    }
+
+    .hero-row {
+      background-image: none !important;
+    }
+  }
+
+  .galeri-beranda {
+    .row {
+      justify-content: space-around;
+      .col {
+        display: grid;
+        justify-items: center;
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .artikel-beranda {
+    .col {
+      display: grid;
+      justify-items: center;
+      .card {
+        width: 80%;
+      }
+    }
+  }
+}
