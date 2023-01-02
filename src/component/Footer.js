@@ -12,7 +12,7 @@ function Footer() {
                             <img className='footer-logo' src={require('../img/footer-logo.svg').default} alt='' />
                             <p>Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk kehidupan yang lebih bermanfaat</p>
                         </div>
-                        <div className="col col-4 col-sm-4 col-md-2">
+                        <div className="col col-12 col-sm-4 col-md-2">
                             <h5 className="footer-title">Informasi</h5>
                             <ul>
                                 <li>
@@ -23,7 +23,7 @@ function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col col-4 col-sm-4 col-md-2">
+                        <div className="col col-12 col-sm-4 col-md-2">
                             <h5 className="footer-title">Tentang</h5>
                             <ul>
                                 <li>
@@ -34,7 +34,7 @@ function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col col-4 col-sm-4 col-md-2">
+                        <div className="col col-12 col-sm-4 col-md-2">
                             <h5 className="footer-title">Ikuti Kami</h5>
                             <ul>
                                 <li>

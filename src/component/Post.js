@@ -3,7 +3,7 @@ import React from 'react'
 function Post() {
     return (
         <>
-            <section className='hero-tentang'>
+            <section className='hero-post'>
                 <div className='container-fluid container-md'>
                     <div className="post-img">
                         <img src={require('../img/post-1.svg').default} className="card-img-top" alt="image" />
